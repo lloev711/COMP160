@@ -1,0 +1,18 @@
+/**Lab 16, Part 2 Multiplication table up to 12 x 12**/
+
+public class MultiplicationApp{
+  
+  /**main method that declares 2D array, uses a nested for loop to fill with data & displays data with
+    * foreach loop**/
+  public static void main(String[] args){ 
+    int cols = 13, rows = 13; 
+    int[][] multable = new int[cols][rows];
+    for(int row = 1; row < rows; row++){
+      for(int col = 1; col < cols; col++){
+        multable[row][col] = row * col;
+        System.out.print(multable[row][col] + "\t\t");
+      }
+      System.out.println("\n");
+    }
+  }
+}
